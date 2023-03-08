@@ -12,8 +12,9 @@ namespace modul3_1302200003
 {
     public partial class Form1 : Form
     {
-        private int bil1;
-        private int bil2;
+
+        private string output = "";
+        private string simpanangka = "";
 
         public Form1()
         {
@@ -32,64 +33,76 @@ namespace modul3_1302200003
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bil1 = int.Parse(label1.Text);
+            simpanangka = label1.Text;
+            output = "";
+
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            label1.Text = "1";
-
+            output = output + "1";
+            label1.Text = output;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            label1.Text = "0";
+            
+            output = output + "0";
+            label1.Text = output;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            label1.Text = "2";
+            output = output + "2";
+            label1.Text = output;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            label1.Text = "3";
+            output = output + "3";
+            label1.Text = output;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            label1.Text = "4";
+            output = output + "4";
+            label1.Text = output;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            label1.Text = "5";
+            output = output + "5";
+            label1.Text = output;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            label1.Text = "6";
+            output = output + "6";
+            label1.Text = output;
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            label1.Text = "7";
+            output = output + "7";
+            label1.Text = output;
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            label1.Text = "8";
+            output = output + "8";
+            label1.Text = output;
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            label1.Text = "9";
+            output = output + "9";
+            label1.Text = output;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            bil2 = int.Parse(label1.Text);
-            var hasil = bil1 + bil2;
+            ;
+            var hasil = int.Parse(simpanangka) + int.Parse(output);
             label1.Text = "" + hasil;
         }
     }
